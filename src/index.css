@@ -1,0 +1,52 @@
+/* index.css: Global styles and default font */
+:root {
+  --default-white: #ffffff;
+  --default-black: #000000;
+  --default-color: #6F8BAC;
+  --default-lighter-color: #93ACC9;
+  --default-background-color: #F2F1EE;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope';
+  color: var(--default-black);
+  background-color: var(--default-background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--default-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+main {
+  flex: 1; /* Push footer to the bottom */
+}

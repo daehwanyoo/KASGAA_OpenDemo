@@ -1,0 +1,124 @@
+/* General page styles */
+.upcoming-event-page {
+  display: flex;
+  background-color: var(--default-background-color);
+  padding: 2em;
+}
+.upcoming-event-title-container {
+  text-align: center;
+  margin: 1em 0;
+  margin-top: 4em;
+
+}
+
+.upcoming-event-title {
+  font-size: 35px; /*default*/
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Calendar Container */
+.calendar-container {
+  flex: 2;
+  max-width: 66%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: flex-start; /* Align header to the left */
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 1em;
+  color: var(--default-color); 
+}
+
+.nav-arrow {
+  cursor: pointer;
+  user-select: none;
+  color: var(--default-color); 
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days in a row */
+  gap: 2px; /* White space between cells */
+  background-color: var(--default-background-color);
+}
+.calendar-header-cell {
+  background-color: #5A6879; /* Background color */
+  color: var(--default-background-color); /* Font color */
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 500; /* Medium */
+  text-align: center;
+  line-height: 1.5; /* Ensure vertical centering */
+  padding: 10px 0; /* Adjust spacing */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+.calendar-cell {
+  width: 100%;
+  height: 80px;
+  background-color: var(--default-color); /* Default color for cells */
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none; /* Remove borders */
+}
+
+.calendar-cell span {
+  font-size: 1em; /* Regular font size for numbers */
+  font-weight: normal;
+  
+}
+
+/* Active cell styling */
+.calendar-cell.active {
+  background-color: var(--default-background-color);
+    color: var(--default-color);
+}
+.calendar-cell.selected {
+  border: 2px solid var(--default-color); /* Add border when selected */
+}
+
+.calendar-cell:hover {
+  border: 2px solid var(--default-color); /* Add hover effect */
+  cursor: pointer; /* Indicate clickable cells */
+}
+/* Event Details */
+.event-details {
+  flex: 1;
+  padding: 2em;
+  background-color: var(--default-background-color);
+    border-left: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-image {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 1em;
+}
+
+.event-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.event-time,
+.event-location,
+.event-description {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}

@@ -1,0 +1,130 @@
+/* Profile Page Styles */
+.ProfilePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 4em; /* Space between header and content */
+}
+
+.ProfilePage h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+/* Profile Section Layout */
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8em;
+  width: 100%;
+  max-width: 900px;
+}
+
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  margin-left: 10%; /* 10% gap from the left */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid var(--default-color);
+}
+
+.edit-photo {
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 500; /* Medium */
+  color: var(--default-color);
+  cursor: pointer;
+}
+
+/* Form Section */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em; /* Space between form fields */
+  width: 100%;
+}
+
+.form-container label {
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 400; /* Regular */
+  color: var(--default-color);
+}
+
+.form-container input {
+  width: 35em;
+  padding: 0.8em;
+  background-color: #ffffff; /* White background for blanks */
+  border: none; /* No border */
+  border-radius: 5px; /* Subtle rounded corners */
+  margin-right: 5%; /* Slight right alignment */
+}
+
+.form-container input:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em; /* Almost no gap between buttons */
+  margin-top: 20px;
+  width: 30.5em;  
+}
+
+.save-changes-btn,
+.logout-btn {
+  flex: 1; /* Equal button size */
+  padding: 0.8em;
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 500; /* Medium */
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.save-changes-btn {
+  background-color: var(--default-color);
+  color: var(--default-background-color);
+}
+
+.logout-btn {
+  background-color: var(--default-black);
+  color: var(--default-background-color);
+}
+
+/* Button hover effects */
+.save-changes-btn:hover {
+  background-color: var(--default-lighter-color);
+}
+
+.logout-btn:hover {
+  background-color: var(--default-darker-color);
+}
+
+/* Logo Wrapper at the Bottom */
+.profile-logo-wrapper {
+  position: relative; /* Ensure it stays in the document flow */
+  margin-bottom: -2rem; /* Add spacing between the logo and footer */
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left */
+  width: 100%; /* Full width to align to the left edge */
+}
+
+.profile-logo {
+  width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 0%; /* Push logo 10% from the left */
+}

@@ -1,0 +1,87 @@
+/* General page styles */
+main {
+  flex: 1 !important; /* Push footer to the bottom if content is short */
+}
+
+.footer {
+  margin-top: auto !important; /* Ensure footer stays at the bottom */
+}
+
+.community-page {
+    background-color: var(--default-background-color);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* OUR COMMUNITY title */
+  .community-header {
+    margin-bottom: 2em;
+  }
+  
+  .community-title {
+    font-size: 35px; /*default*/
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  /* Pyramid layout */
+  .community-pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0em; /*바꾸기 */
+
+  }
+  
+  .pyramid-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em; /* Space between profile cards */
+  }
+  
+  /* Individual profile cards */
+  .profile-card {
+    text-align: center;
+    padding: 5rem;
+    background-color: var(--default-background-color);
+    max-width: 200px;
+
+  }
+
+  
+  
+  /* Profile image */
+  .profiles-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    border: 3px solid var(--default-color);
+
+  }
+  
+  /* Profile details */
+  .profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+  }
+  
+  .profile-title {
+    font-size: 1em;
+    color: var(--default-black);
+    margin: 0.2em 0;
+  }
+  
+  .profile-description {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0.5em 0 0;
+  }

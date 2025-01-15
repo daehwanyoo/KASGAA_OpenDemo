@@ -1,0 +1,109 @@
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--default-background-color); /* Default for Home */
+}
+
+header .logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation Links */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a, header nav ul li button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: var(--default-black); /* Default black for Home */
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 500; /* Medium */
+  cursor: pointer;
+  line-height: 1.5; /* Ensures consistent vertical alignment */
+  padding: 0.5em 0; /* Adds consistent vertical padding */
+}
+
+/* Button Styles for Sign In and Hello, <Name> */
+header nav ul li a.btn, header nav ul li button.btn {
+  padding: 0.5em 1em;
+  border-radius: 5px; /* Subtle rounded corners */
+  font-size: 0.9375rem; /* 15px */
+  font-weight: 500; /* Medium */
+  text-align: center;
+  line-height: 1.5; /* Ensures consistent vertical alignment */
+}
+
+/* Default Page Button Styles */
+header nav ul li a.btn {
+  background-color: var(--default-color); /* Default button background */
+  color: var(--default-background-color); /* Default button text color */
+}
+
+header nav ul li a.btn:hover {
+  background-color: var(--default-lighter-color); /* Lighter hover effect */
+  color: var(--default-background-color);
+}
+
+/* Event, Community, Profile, and Sign In Background */
+header.event-header, header.community-header, header.profile-header {
+  background-color: var(--default-color); /* Shared background for these pages */
+}
+
+/* Event, Community, Profile Navigation Links */
+header.event-header nav ul li a, 
+header.community-header nav ul li a, 
+header.profile-header nav ul li a {
+  color: var(--default-background-color); /* White links for these pages */
+}
+
+header.event-header nav ul li a:hover, 
+header.community-header nav ul li a:hover, 
+header.profile-header nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--default-lighter-color);
+}
+
+/* Logo for Specific Pages */
+header.home-header .logo img {
+  content: url('logo.png'); /* Logo for Home */
+}
+
+header.event-header .logo img, 
+header.community-header .logo img, 
+header.profile-header .logo img {
+  content: url('logo-white.png'); /* Logo for other pages */
+}
+
+/* Fix for anchor links (e.g., #about) */
+header.default-page-header .logo img {
+  content: url('logo.png'); /* Ensure correct logo for pages like #about */
+}
+
+header.default-page-header nav ul li a {
+  color: var(--default-black); /* Default color for links */
+}
+
+header.default-page-header nav ul li a:hover {
+  color: var(--default-color); /* Hover effect for links */
+}
+header.default-page-header nav ul li a.btn {
+  background-color: var(--default-color); /* Button background for Home */
+  color: var(--default-background-color); /* Button text color for Home */
+}
+header.event-header nav ul li a.btn,
+header.community-header nav ul li a.btn,
+header.profile-header nav ul li a.btn {
+  background-color: var(--default-background-color); /* Button background */
+  color: var(--default-color); /* Button text color */
+}
